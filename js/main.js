@@ -1,6 +1,6 @@
 function randomInt(fromInclusive, toInclusive) {
   if (fromInclusive > toInclusive) {
-    throw 'InvalidArgumentException: toInclusive must be greater than or equal fromInclusive';
+    throw new RangeError('toInclusive must be greater than or equal fromInclusive');
   }
 
   const min = Math.floor(fromInclusive);
